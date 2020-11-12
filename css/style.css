@@ -1,0 +1,530 @@
+@charset "utf-8";
+
+/* リセットcss */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 2;
+  font-family: "MS Pゴシック";
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/* 共通のスタイル */
+body {
+  font-family: Meiryo;
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px 0;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.wrap {
+  width: 80%;
+  margin: 0 auto 50px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.around {
+  justify-content: space-around;
+}
+
+/* その他のスタイルは以下に記述していきます */
+
+header {
+  height: 70px;
+  background: #000;
+}
+.header-logo {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #f2f2f2;
+  line-height: 70px;
+}
+
+.header-nav li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 16px;
+}
+.header-nav a {
+  color: #f2f2f2;
+  line-height: 70px;
+}
+#eyecatch {
+  height: 800px;
+  background: url(../img/eyecatch.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#eyecatch p {
+  position: absolute;
+  top: 55%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  font-style: italic;
+  font-weight: bold;
+  color: #ffff;
+}
+
+.news {
+  position: absolute;
+  width: 40%;
+  height: 70px;
+  background: #ffff;
+  right: 10%;
+  font-size: 12px;
+  float: left;
+  top: 780px;
+  overflow: hidden;
+  line-height: 1;
+  padding: 10px;
+}
+
+.newslogo {
+  position: absolute;
+  width: 10%;
+  height: 70px;
+  background: black;
+  right: 0%;
+  font-size: 12px;
+  float: left;
+  color: rgb(255, 255, 255);
+  top: 780px;
+  overflow: hidden;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#mission {
+  position: relative;
+  height: 400px;
+  background: black;
+}
+.mission-img {
+  position: absolute;
+  width: 500px;
+  top: 120px;
+  right: 100px;
+}
+.mission-ex {
+  width: 50%;
+  height: 200px;
+  position: absolute;
+  color: #ffff;
+  font-size: 12px;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.mission-ex p {
+  color: #ffff;
+  font-size: 12px;
+  line-height: 22px;
+  padding: 20px 0px;
+}
+
+h1 {
+  color: #ffff;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0px 0px 20px 0px;
+}
+.btn-a {
+  font-size: 14px;
+  color: #0000;
+  background-color: #ffff;
+  border: none;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.blank {
+  height: 100px;
+}
+
+#service {
+  position: relative;
+  background: rgb(209, 209, 209);
+  padding: 10px;
+  height: 1200px;
+}
+.business-ex1 {
+  position: absolute;
+  background: #ffff;
+  height: 200px;
+  width: 40%;
+  padding: 20px;
+  font-size: 12px;
+  left: 20%;
+  top: 20%;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.btn {
+  font-size: 14px;
+  color: #0000;
+  border-color: #0000;
+  border: 1px solid;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-left: auto;
+  margin-right: 0px;
+}
+.business {
+  width: 80%;
+}
+.business-image1 {
+  position: absolute;
+  width: 50%;
+  right: 0%;
+  top: 10%;
+  z-index: 10;
+}
+.business-ex2 {
+  position: absolute;
+  background: #ffff;
+  height: 200px;
+  width: 40%;
+  padding: 20px;
+  font-size: 12px;
+  left: 30%;
+  bottom: 20%;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.btn-box {
+  color: black;
+  text-align: right;
+}
+.business-image2 {
+  position: absolute;
+  width: 50%;
+  left: 0%;
+  bottom: 10%;
+  z-index: 20;
+}
+#article {
+  position: relative;
+  height: 700px;
+  color: #ffff;
+  text-align: center;
+
+  vertical-align: middle;
+}
+#article {
+  position: relative;
+  height: 600px;
+}
+.company-left {
+  background: url(../img/company.jpeg) no-repeat;
+  left: 0px;
+}
+.recruit-right {
+  background: url(../img/recruit.jpg) no-repeat;
+  right: 0px;
+}
+.company-left,
+.recruit-right {
+  position: absolute;
+  width: 48%;
+  height: 300px;
+  top: 150px;
+  float: left;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.company-left h2,
+.recruit-right h2 {
+  color: #ffff;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 30px;
+}
+.company-left h3,
+.recruit-right h3 {
+  color: #ffff;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 15px;
+  padding-top: 10px;
+}
+#faq {
+  height: 350px;
+}
+.faq1 {
+  width: 80%;
+  background: #000;
+  margin-left: auto;
+  margin-right: auto;
+  height: 165px;
+  display: flex;
+
+  align-items: center;
+}
+.faq1 h2 {
+  display: inline-block;
+  font-size: 20px;
+  color: #ffff;
+}
+
+.faq1 h3 {
+  display: inline-block;
+  font-size: 20px;
+  color: #ffff;
+}
+#contact1 {
+  height: 700px;
+  width: 100%;
+  background: url(../img/recruit.jpg) no-repeat;
+  display: table;
+}
+.contact {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+#contact1 h1 {
+  font-size: 40px;
+  color: #ffff;
+  text-align: center;
+  padding-top: 30px;
+  font-weight: normal;
+}
+#contact1 h2 {
+  font-size: 30px;
+  color: #ffff;
+  text-align: center;
+  padding-top: 20px;
+}
+#contact1 h4 {
+  font-size: 16px;
+  color: #ffff;
+  text-align: center;
+}
+#contact1 p {
+  font-size: 12px;
+  color: #ffff;
+  text-align: center;
+}
+.btn-3 {
+  font-size: 14px;
+  color: #ffff;
+
+  border-color: #ffff;
+  border: 1px solid;
+
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+footer {
+  height: 150px;
+  background: black;
+  color: #ffff;
+}
+.copyright {
+  text-align: center;
+}

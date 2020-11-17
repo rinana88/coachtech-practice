@@ -255,11 +255,11 @@ header {
   height: 70px;
   background: #ffff;
   right: 10%;
-  font-size: 12px;
+  
   float: left;
   top: 780px;
   
-  line-height: 1;
+
   padding: 20px;
 }
 .news p {
@@ -272,7 +272,7 @@ header {
   height: 70px;
   background: black;
   right: 0%;
-  font-size: 12px;
+  
   float: left;
   color: rgb(255, 255, 255);
   top: 780px;
@@ -287,6 +287,9 @@ header {
   position: relative;
   height: 400px;
   background: black;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .mission-img {
   position: absolute;
@@ -295,23 +298,19 @@ header {
   right: 100px;
 }
 .mission-ex {
-  width: 50%;
-  height: 200px;
+  width: 50vw;
+  
   position: absolute;
   color: #ffff;
-  font-size: 12px;
+  
   line-height: 1.5;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  
 }
 .mission-ex p {
   color: #ffff;
-  font-size: 12px;
-  line-height: 22px;
-  padding: 20px 0px;
+  
+  line-height: 1.8rem;
+  
 }
 
 .mission-h {
@@ -333,56 +332,59 @@ header {
 
 
 #service {
- margin-top: 200px;
-  background: rgb(209, 209, 209);
-  width: 100%;
-
-  
+  margin-top: 200px;
+  background: #e5e5e5;
+  padding-bottom: 50px;
 }
-
-
 #service h2 {
   font-size: 30px;
-  padding: 30px;
   text-align: center;
-
+  padding: 30px;
 }
 .service-box{
-  width: 100%;
   position: relative;
-  height: 550px;
   margin-bottom: 100px;
 }
-
-
-  
 
 .service-ex1,
 .service-ex2 {
   position: absolute;
-  background: #ffff;
-  height: 200px;
-  width: 40%;
-  padding: 20px;
-  font-size: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  
-  
+  top: 60px;
+  background: white;
+  padding: 30px;
+  height: auto;
+  width: 30%;
+  z-index:10;
+}
+
+.service p{
+  line-height: 1.8rem;
 }
 .service-ex1 {
-   left: 20%;
-   top: 25%;
-
-   
+   left: 24%;
 }
 .service-ex2 {
-  left: 30%;
-  top: 25%;
- 
+  right: 24%;
 }
+.img01,
+.img02 {
+  width: 60%;
+  height: auto;
+}
+.img01 {
+  margin-left: auto;
+  
+  
+}
+.img02 {
+  margin-right: auto;
+  
+}
+
+
+  
+
+
 
 
 .btn {
@@ -398,34 +400,21 @@ header {
   
   
 }
-.service-image1,
-.service-image2 {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  right: 0%;
-  
-  
-  
-}
-.service-image1 {
-  right: 0%;
-  
-}
-.service-image2 {
-  left: 0%;
-}
+
 
 
 
 
 #link {
-  
-
   color: white;
-  margin-top: 125px;
   width: 100%;
-  height: 400px;
+  height: auto;
+}
+
+.link-left,
+.link-right {
+  margin-top:125px;
+  margin-bottom:125px;
 }
 
 .link-left {
@@ -433,14 +422,15 @@ header {
   margin-right: auto;
   margin-left: 0;
 }
+
 .link-right {
   background: url(../img/recruit.jpg) no-repeat;
   margin-right: 0;
   margin-left: auto;
 }
+
 .link-left,
 .link-right {
-  
   width: 48%;
   height: 250px;
   display: flex;
@@ -459,17 +449,17 @@ header {
 }
 
 
-#faq {
-  height: 300px;
-}
+
 .faq-box {
-  width: 70%;
+  width: 80vw;
   background: #000;
   margin: 0 auto;
   height: 165px;
   display: flex;
   color: #ffff;
   align-items: center;
+  
+  margin-bottom: 125px;
 }
 .faq-box h2 {
   display: inline-block;
@@ -594,13 +584,14 @@ footer {
   
 }
 .news {
-  width: 80%;
+  width: 100%;
   left: 0%;
   
 
 }
 .news p {
   width: 80%;
+  font-size: 12px;
 }
 .newslogo {
   width: 20%;
@@ -632,48 +623,51 @@ footer {
   
 }
 .service-box {
-  
+  width: 100%;
   height: auto;
+  position: static;
+  margin-bottom: 50px;
   
   
 }
-.service-image1 {
-  width: 100%;
-  max-width: 100%;
-  
-  
-  
-}
-.service-ex1 {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  left: 0%;
-  
-  
 
-  
-}
-.service-image2 {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  top: opx;
-  
-}
+.service-ex1,
 .service-ex2 {
+
   width: 100%;
-  max-width: 100%;
+  
   height: auto;
   left: 0%;
-  
+  position: static;
+}
+
+.service-ex p {
+  width: 70%;
+}
+
+.img01,
+.img02 {
+  width: 100%;
+
+}
+
+
+
 #link {
   margin-top: 20px;
+  margin-bottom: 20px;
+  
 }
+.link-left,
+.link-right {
+  margin-bottom: 0;
+  margin-top: 0;
 }
-#faq {
-  margin-top: 0px;
-}
+
+.faq-box {
+  margin-top: 50px;
+  margin-bottom: 50px;
+} 
 
 .contact p,
 .contact h1 {
